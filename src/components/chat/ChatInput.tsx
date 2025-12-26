@@ -12,7 +12,7 @@ interface ChatInputProps {
   onChange: (val: string) => void;
   onSend: () => void;
   isTyping: boolean;
-  textareaRef: React.RefObject<HTMLTextAreaElement>;
+  textareaRef: React.RefObject<HTMLTextAreaElement | null>;
 }
 
 export const ChatInput = ({
